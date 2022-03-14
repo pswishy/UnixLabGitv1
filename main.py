@@ -27,19 +27,18 @@ for chars in phrase:
 for letters in all_letters:
     if len(blocks) <= 4:
         blocks.append(letters)
-        print(blocks)
+        #print(blocks)
     else:
         seperated.append(blocks)
         blocks = []
         blocks.append(letters)
-        print(blocks)
+        #print(blocks)
 seperated.append(blocks)
     
         
         
 
-print(seperated)
-stdout_fileno = sys.stdout
+#print(seperated)
 
 # logic for correct block output
 for blocks in seperated:
@@ -58,6 +57,4 @@ for blocks in seperated:
 
 
 print(answer_string)
-    
-    #stdout_fileno.write(blocks + " ")
 
