@@ -27,12 +27,13 @@ for chars in phrase:
 for letters in all_letters:
     if len(blocks) <= 4:
         blocks.append(letters)
-
+        print(blocks)
     else:
         seperated.append(blocks)
         blocks = []
         blocks.append(letters)
-    
+        print(blocks)
+seperated.append(blocks)
     
         
         
